@@ -43,3 +43,21 @@ img {
 .color-orange {
     color: #FD5B19;
 }
+
+.bc-orange {
+    background-color: #FD5B19;
+}
+
+.bc-blue {
+    background-color: #004DA4;
+}
+
+.section-title {
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.25;
+}
+
+.spBr {
+    /* pc none */
+}

@@ -1,0 +1,38 @@
+■使用フォントについて
+「KiraMeki Pay」ロゴは画像で書き出してください。
+それ以外は全てGoogleフォントになりますのでデザインデータを見た上で必要なフォントを使用してください。読み込みはlink/@importどちらでも構いません。
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+
+font-family: "Outfit", sans-serif;
+font-family: "Zen Kaku Gothic New", sans-serif;
+
+.outfit {
+    font-family: "Outfit", sans-serif;
+}
+.bold {
+    font-weight: bold;
+}
+.color-fff {
+    color: #fff;
+}
+.color-blue {
+    color: #004DA4;
+}
+.color-topic-blue {
+    color: #003E92;
+}
+.color-orange {
+    color: #FD5B19;
+}
+
+◆リンク先指定
+設定箇所	              URL	      備考
+ヘッダーロゴ	          /	        同一タブ、ルート相対パスで指定
+ダウンロードする	      /download	同一タブ、ルート相対パスで指定
+利用規約・ガイドライン	/kiyaku	  同一タブ、ルート相対パスで指定
+プライバシーポリシー	  /privacy	同一タブ、ルート相対パスで指定
+お知らせ	            /news	    同一タブ、ルート相対パスで指定
+サポート	            /support	同一タブ、ルート相対パスで指定

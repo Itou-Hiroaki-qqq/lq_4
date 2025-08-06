@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+/*
+common
+================================================ */
+html {
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-style: normal;
+    color: #000;
+    background-color: #FD5B19;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.outfit {
+    font-family: "Outfit", sans-serif;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.color-fff {
+    color: #fff;
+}
+
+.color-blue {
+    color: #004DA4;
+}
+
+.color-topic-blue {
+    color: #003E92;
+}
+
+.color-orange {
+    color: #FD5B19;
+}

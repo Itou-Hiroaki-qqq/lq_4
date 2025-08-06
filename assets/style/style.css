@@ -252,6 +252,11 @@ cta
     line-height: 1.4;
     border-radius: 4px;
     box-shadow: 0 0 4px 0 rgba(0,0,0,0.2);
+    transition: all 0.4s ease;
+}
+
+.cta__btn:hover {
+    opacity: 0.6;
 }
 
 

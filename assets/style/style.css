@@ -288,7 +288,7 @@ cta
     .cta__btn {
         width: 100%;
         max-width: 338px;
-        margin: 20px auto 0;
+        margin: 24px auto 0;
         height: 64px;
         font-size: 22px;
         line-height: 1.45;
@@ -334,7 +334,7 @@ about
 /* about PC */
 @media  (min-width:769px) {
     .about {
-        padding: 80px 0;
+        padding: 80px 16px 84px;
     }
 
     .container--about {
@@ -347,11 +347,15 @@ about
     }
 
     .about__txtZone {
-        width: calc(100% * (528/944));
+        width: 528px;
+        /* 調整 */
+        translate: 16px 8px;
     }
 
     .section-title--about {
         text-align: left;
+        /* 調整 */
+        translate: 0px -2px;
     }
 
     .about__lead {
@@ -362,16 +366,18 @@ about
     }
 
     .about__txt {
-        margin-top: 24px;
+        margin-top: 19px;
         font-size: 16px;
         line-height: 2;
     }
 
     .about__img {
-        width: calc(100% * (296/944));
+        width: calc(100% * (305/944));
         max-width: 296px;
         aspect-ratio: 296 / 600;
         margin: 0;
+        /* 調整 */
+        translate: -17px 0px;
     }
 
     .about__img img {
@@ -474,12 +480,12 @@ reasons
 /* reasons PC */
 @media  (min-width:769px) {
     .reasons {
-        padding: 80px 0;
+        padding: 80px 16px 79px;
     }
 
     .container--reasons {
         max-width: 900px;
-        padding: 0 16px;
+        padding: 0;
     }
 
     .reasons__lead {
@@ -497,10 +503,12 @@ reasons
     .reasons__lead-num {
         font-size: 48px;
         line-height: 1.25;
+        /* 調整 */
+        margin-left: -6px;
     }
 
     .reasons__txt {
-        margin-top: 24px;
+        margin-top: 20px;
         font-size: 16px;
         line-height: 2;
     }
@@ -558,7 +566,7 @@ reasons
     }
 
     .reasons__itemTxt {
-        margin-top: 22px;
+        margin-top: 18px;
         font-size: 20px;
         line-height: 1.75;
     }
@@ -690,7 +698,7 @@ faq
 /* faq PC */
 @media  (min-width:769px) {
     .faq {
-        padding: 80px 0;
+        padding: 80px 0 83px;
     }
 
     .faq__lead {
@@ -705,14 +713,14 @@ faq
     }
 
     .faq__txt {
-        margin-top: 24px;
+        margin-top: 21px;
         font-size: 16px;
         line-height: 2;
     }
 
     .accordion {
         max-width: 800px;
-        margin: 32px auto 0;
+        margin: 29px auto 0;
     }
 
     .accordion-item:not(:first-of-type) {
@@ -725,7 +733,7 @@ faq
 
     .accordion-header {
         width: 100%;
-        padding: 24px 32px;
+        padding: 24px 32px 26px;
         gap: 16px;
     }
 
@@ -736,7 +744,8 @@ faq
 
     .accordion-question {
         font-size: 18px;
-        line-height: 2;
+        line-height: 1.7;
+        padding-right: 8px;
     }
 
     .accordion-icon {
@@ -781,9 +790,11 @@ faq
     }
 
     .accordion-content p {
-        padding: 0 32px 24px;
+        padding: 0 31px 11px;
         font-size: 16px;
         line-height: 1.68;
+        /* 調整 */
+        translate: 0px -9px;
     }
 
 } /* @media  (min-width:769px) */

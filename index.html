@@ -13,6 +13,14 @@
   <meta property="og:image" content="★★★★サムネイル画像のURL  ※絶対パスで記述">
   <title>キャッシュレスを身近に、もっと簡単に。 | KiraMeki Pay</title>
 
+  <!-- js -->
+  <script src="assets/script/main.js" defer></script>
+
+  <!-- Web fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+
   <!-- css -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css">
   <link rel="stylesheet" href="assets/style/style.css">
@@ -22,7 +30,7 @@
     <article>
       <div class="hero bc-orange">
         <div class="container">
-          <h1><a href="./"><img src="assets/image/logo.svg.png" alt="KiraMeki Pay"></a></h1>
+          <h1 class="hero__title"><a href="./"><img src="assets/image/logo.svg.png" alt="KiraMeki Pay"></a></h1>
 
           <div class="wrapper wrapper--hero">
             <div class="hero__group">
@@ -54,7 +62,7 @@
           <p class="cta__lead bold color-blue">
             スマホでダウンロードするだけ！
           </p>
-          <a class="cta__btn bold color-fff bc-blue" href="./download/index.html">
+          <a class="cta__btn bold color-fff bc-blue" href="./download/index.html" aria-label="このボタンをクリックするとダウンロードできます。">
             ダウンロードする
           </a>
         </div>
@@ -88,7 +96,7 @@
           <p class="cta__lead bold color-blue">
             スマホでダウンロードするだけ！
           </p>
-          <a class="cta__btn bold color-fff bc-blue" href="./download/index.html">
+          <a class="cta__btn bold color-fff bc-blue" href="./download/index.html" aria-label="このボタンをクリックするとダウンロードできます。">
             ダウンロードする
           </a>
         </div>
@@ -131,7 +139,7 @@
                 <p class="reasons__num outfit bold color-orange">
                   02.
                 </p>
-                <div class="reasons__imgCircle">
+                <div class="reasons__imgCircle reasons__imgCircle--02">
                   <picture>
                       <source
                       srcset="assets/image/reasons02_pc.svg.png"
@@ -172,7 +180,7 @@
           <p class="cta__lead bold color-blue">
             スマホでダウンロードするだけ！
           </p>
-          <a class="cta__btn bold color-fff bc-blue" href="./download/index.html">
+          <a class="cta__btn bold color-fff bc-blue" href="./download/index.html" aria-label="このボタンをクリックするとダウンロードできます。">
             ダウンロードする
           </a>
         </div>
@@ -212,7 +220,7 @@
                   Q.
                 </span>
                 <span class="accordion-question bold">
-                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                  ここにテキストが入ります。ここにテキストが入ります。
                 </span>
                 <span class="accordion-icon" aria-hidden="true"></span>
               </button>
@@ -229,7 +237,7 @@
                   Q.
                 </span>
                 <span class="accordion-question bold">
-                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                  ここにテキストが入ります。ここにテキストが入ります。
                 </span>
                 <span class="accordion-icon" aria-hidden="true"></span>
               </button>
@@ -246,7 +254,7 @@
                   Q.
                 </span>
                 <span class="accordion-question bold">
-                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                  ここにテキストが入ります。ここにテキストが入ります。
                 </span>
                 <span class="accordion-icon" aria-hidden="true"></span>
               </button>
@@ -263,7 +271,7 @@
                   Q.
                 </span>
                 <span class="accordion-question bold">
-                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                  ここにテキストが入ります。ここにテキストが入ります。
                 </span>
                 <span class="accordion-icon" aria-hidden="true"></span>
               </button>
@@ -282,7 +290,7 @@
           <p class="cta__lead bold color-blue">
             スマホでダウンロードするだけ！
           </p>
-          <a class="cta__btn bold color-fff bc-blue" href="./download/index.html">
+          <a class="cta__btn bold color-fff bc-blue" href="./download/index.html" aria-label="このボタンをクリックするとダウンロードできます。">
             ダウンロードする
           </a>
         </div>
@@ -292,7 +300,7 @@
   <footer>
     <div class="container container--footer">
       <div class="footer__group">
-        <h2><a href="./"><img src="assets/image/logo.svg.png" alt="KiraMeki Pay"></a></h2>
+        <h2 class="footer__logo"><a href="./"><img src="assets/image/logo.svg.png" alt="KiraMeki Pay"></a></h2>
         <nav class="footerNav">
           <ul class="footerNav__list">
             <li class="footerNav__item">

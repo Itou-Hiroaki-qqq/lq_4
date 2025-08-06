@@ -1,191 +1,191 @@
-■使用フォントについて
-「KiraMeki Pay」ロゴは画像で書き出してください。
-それ以外は全てGoogleフォントになりますのでデザインデータを見た上で必要なフォントを使用してください。読み込みはlink/@importどちらでも構いません。
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
-
-font-family: "Outfit", sans-serif;
-font-family: "Zen Kaku Gothic New", sans-serif;
-
-.outfit {
-    font-family: "Outfit", sans-serif;
-}
-.bold {
-    font-weight: bold;
-}
-.color-fff {
-    color: #fff;
-}
-.color-blue {
-    color: #004DA4;
-}
-.color-topic-blue {
-    color: #003E92;
-}
-.color-orange {
-    color: #FD5B19;
-}
-
-◆paddingなど
- spサイズ
- container
- padding: 0 15px;
- PCサイズ
- container　max-width　1200　　padding16
- wrapper　max-width　1100　
- 　　　　　hero　padding30
- container--footer padding50
-
- faq__txtWrapper max-width 900
- accordion max-width 800
-
-◆リンク先指定
-設定箇所	              URL	      備考
-ヘッダーロゴ	          /	        同一タブ、ルート相対パスで指定
-ダウンロードする	      /download	同一タブ、ルート相対パスで指定
-利用規約・ガイドライン	/kiyaku	  同一タブ、ルート相対パスで指定
-プライバシーポリシー	  /privacy	同一タブ、ルート相対パスで指定
-お知らせ	            /news	    同一タブ、ルート相対パスで指定
-サポート	            /support	同一タブ、ルート相対パスで指定
-
-◆斜め線装飾
-html
-<section>
-  <h2 class="section-title">セクションタイトル</h2>
-</section>
-
-css
-.section-title {
-  position: relative;
-  display: inline-block;
-  padding: 0 1.5em;
-  font-size: 1.5em;
-}
-
-.section-title::before,
-.section-title::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  width: 30px;
-  height: 2px;
-  background-color: #333;
-  transform: rotate(-20deg);
-}
-
-.section-title::before {
-  left: 0;
-  transform-origin: right center;
-}
-
-.section-title::after {
-  right: 0;
-  transform-origin: left center;
-}
-
 ◆ダウンロードボタン
 　ドロップシャドウつきなので注意
 
-◆アコーディオン
-CSS
-.accordion-content {
-  height: 0;
-  overflow: hidden;
-  transition: height 0.3s ease;
-}
+◆paddingなど
+        spサイズ
+        container
+        padding: 0 15px;
+        PCサイズ
+        container　max-width　1200　　padding16
+        wrapper　max-width　1100　
+        hero　padding30
+ faq__txtWrapper max-width 900
+ accordion max-width 800
+ container--footer padding50
 
-.accordion-header {
-  width: 100%;
-  padding: 1em;
-  background: #2c3e50;
-  color: #fff;
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 1.1em;
-  cursor: pointer;
-  gap: 1em;
-}
+        ■使用フォントについて
+        「KiraMeki Pay」ロゴは画像で書き出してください。
+        それ以外は全てGoogleフォントになりますのでデザインデータを見た上で必要なフォントを使用してください。読み込みはlink/@importどちらでも構いません。
 
-.accordion-label {
-  font-weight: bold;
-  color: #f1c40f;
-  flex-shrink: 0; /* スペースが足りないときに 「縮まない」 ようにする */
-}
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
 
-.accordion-question {
-  flex-grow: 1; /* 余白を埋めるように「伸びる」 */
-  text-align: left;
-}
+        font-family: "Outfit", sans-serif;
+        font-family: "Zen Kaku Gothic New", sans-serif;
 
-.accordion-icon {
-  position: relative;
-  width: 1em;
-  height: 1em;
-  flex-shrink: 0;
-}
-
-.accordion-icon::before,
-.accordion-icon::after {
-  content: '';
-  position: absolute;
-  background-color: #fff;
-  transition: transform 0.3s ease;
-}
-
-/* 横線（共通） */
-.accordion-icon::before {
-  top: 50%;
-  left: 0;
-  right: 0;
-  height: 2px;
-  transform: translateY(-50%);
-}
-
-/* 縦線（+ のときだけ見える） */
-.accordion-icon::after {
-  left: 50%;
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  transform: translateX(-50%);
-}
-
-/* 開いた状態では縦線を透明にして「−」に見せる */
-.accordion-header.active .accordion-icon::after {
-  opacity: 0;
-}
+        .outfit {
+            font-family: "Outfit", sans-serif;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .color-fff {
+            color: #fff;
+        }
+        .color-blue {
+            color: #004DA4;
+        }
+        .color-topic-blue {
+            color: #003E92;
+        }
+        .color-orange {
+            color: #FD5B19;
+        }
 
 
+        ◆リンク先指定
+        設定箇所	              URL	      備考
+        ヘッダーロゴ	          /	        同一タブ、ルート相対パスで指定
+        ダウンロードする	      /download	同一タブ、ルート相対パスで指定
+        利用規約・ガイドライン	/kiyaku	  同一タブ、ルート相対パスで指定
+        プライバシーポリシー	  /privacy	同一タブ、ルート相対パスで指定
+        お知らせ	            /news	    同一タブ、ルート相対パスで指定
+        サポート	            /support	同一タブ、ルート相対パスで指定
 
-JavaScript
-const headers = document.querySelectorAll('.accordion-header');
+        ◆斜め線装飾
+        html
+        <section>
+        <h2 class="section-title">セクションタイトル</h2>
+        </section>
 
-headers.forEach(header => {
-  header.addEventListener('click', () => {
-    const content = header.nextElementSibling;
-    //contentに高さが設定されていて、かつ0pxではない状態をisOpenと定義
-    const isOpen = content.style.height && content.style.height !== "0px";
-    // 「＋／−」用クラス切り替え
-    header.classList.toggle('active', !isOpen);
+        css
+        .section-title {
+        position: relative;
+        display: inline-block;
+        padding: 0 1.5em;
+        font-size: 1.5em;
+        }
 
-    if (isOpen) {
-      //まず高さを明示的に指定しておく
-      content.style.height = content.scrollHeight + 'px';
-      //そして高さを0pxにする。
-      requestAnimationFrame(() => {
-        content.style.height = '0px';
-      });
-    } else {
-      content.style.height = content.scrollHeight + 'px';
-      //transition後に高さをautoにし、このイベント（handler）自体も終わりにする
-      content.addEventListener('transitionend', function handler() {
-        content.style.height = 'auto';
-        content.removeEventListener('transitionend', handler);
-      });
+        .section-title::before,
+        .section-title::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        width: 30px;
+        height: 2px;
+        background-color: #333;
+        transform: rotate(-20deg);
+        }
+
+        .section-title::before {
+        left: 0;
+        transform-origin: right center;
+        }
+
+        .section-title::after {
+        right: 0;
+        transform-origin: left center;
+        }
+
+    ◆アコーディオン
+    CSS
+    .accordion-content {
+      height: 0;
+      overflow: hidden;
+      transition: height 0.3s ease;
     }
-  });
-});
+
+    .accordion-header {
+      width: 100%;
+      padding: 1em;
+      background: #2c3e50;
+      color: #fff;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 1.1em;
+      cursor: pointer;
+      gap: 1em;
+    }
+
+    .accordion-label {
+      font-weight: bold;
+      color: #f1c40f;
+      flex-shrink: 0; /* スペースが足りないときに 「縮まない」 ようにする */
+    }
+
+    .accordion-question {
+      flex-grow: 1; /* 余白を埋めるように「伸びる」 */
+      text-align: left;
+    }
+
+    .accordion-icon {
+      position: relative;
+      width: 1em;
+      height: 1em;
+      flex-shrink: 0;
+    }
+
+    .accordion-icon::before,
+    .accordion-icon::after {
+      content: '';
+      position: absolute;
+      background-color: #fff;
+      transition: transform 0.3s ease;
+    }
+
+    /* 横線（共通） */
+    .accordion-icon::before {
+      top: 50%;
+      left: 0;
+      right: 0;
+      height: 2px;
+      transform: translateY(-50%);
+    }
+
+    /* 縦線（+ のときだけ見える） */
+    .accordion-icon::after {
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      transform: translateX(-50%);
+    }
+
+    /* 開いた状態では縦線を透明にして「−」に見せる */
+    .accordion-header.active .accordion-icon::after {
+      opacity: 0;
+    }
+
+
+
+    JavaScript
+    const headers = document.querySelectorAll('.accordion-header');
+
+    headers.forEach(header => {
+      header.addEventListener('click', () => {
+        const content = header.nextElementSibling;
+        //contentに高さが設定されていて、かつ0pxではない状態をisOpenと定義
+        const isOpen = content.style.height && content.style.height !== "0px";
+        // 「＋／−」用クラス切り替え
+        header.classList.toggle('active', !isOpen);
+
+        if (isOpen) {
+          //まず高さを明示的に指定しておく
+          content.style.height = content.scrollHeight + 'px';
+          //そして高さを0pxにする。
+          requestAnimationFrame(() => {
+            content.style.height = '0px';
+          });
+        } else {
+          content.style.height = content.scrollHeight + 'px';
+          //transition後に高さをautoにし、このイベント（handler）自体も終わりにする
+          content.addEventListener('transitionend', function handler() {
+            content.style.height = 'auto';
+            content.removeEventListener('transitionend', handler);
+          });
+        }
+      });
+    });

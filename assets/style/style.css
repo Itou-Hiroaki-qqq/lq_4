@@ -61,3 +61,408 @@ img {
 .spBr {
     /* pc none */
 }
+
+.container {
+    width: 100%;
+    padding: 0 15px;
+}
+
+
+/* common PC */
+@media  (min-width:769px) {
+    .container {
+        max-width: 1200px;
+        padding: 0 16px;
+    }
+
+    .wrapper {
+        max-width: 1100px;
+    }
+
+} /* @media  (min-width:769px) */
+
+
+/*
+hero
+================================================ */
+.hero {
+    width: 100%;
+    padding: 16px 0 48px;
+}
+
+.hero__title {
+    text-align: center;
+}
+
+.hero__title a img {
+    width: 146px;
+    line-height: 1px;
+}
+
+.wrapper--hero {
+    margin-top: 30px;
+}
+
+.hero__group {
+    /* pc flex */
+}
+
+.hero__img {
+    width: calc(100% * (280/390));
+    min-width: 280px;
+    max-width: 474px;
+    aspect-ratio: 280 / 383;
+    margin: 0 auto;
+}
+
+.hero__img img {
+    width: 100%;
+    height: auto;
+}
+
+.hero__caption-main {
+    margin-top: 18px;
+    font-size: 38px;
+    line-height: 1.26;
+}
+
+.hero__caption-lead {
+    margin-top: 8px;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+
+/* hero PC */
+@media  (min-width:769px) {
+    .wrapper--hero {
+        padding: 0 30px;
+    }
+
+} /* @media  (min-width:769px) */
+
+
+/*
+cta
+================================================ */
+.cta {
+    background-color: #BCE0EB;
+    padding: 28px 0 24px;
+    text-align: center;
+}
+
+.cta__lead {
+    font-size: 14px;
+    line-height: 1.42;
+    /* 斜め線装飾のための設定 */
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.cta__lead::before,
+.cta__lead::after {
+    content: "";
+    position: absolute;
+    top: 90%; /* 親要素の上からの位置 */
+    width: 30px; /* 線の長さ */
+    height: 1px; /* 線の太さ */
+    background-color: #004DA4;
+}
+.cta__lead::before {
+    left: -40px; /* 線の横位置 */
+    transform: rotate(50deg); /* 線の傾き具合 */
+    transform-origin: right bottom;
+}
+.cta__lead::after {
+    right: -40px; /* 線の横位置 */
+    transform: rotate(-50deg); /* 線の傾き具合 */
+    transform-origin: left bottom;
+}
+
+.cta__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 232px;
+    margin: 7.8px auto 0;
+    height: 45px;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+
+/*
+about
+================================================ */
+.about {
+    background-color: #FFFAF5;
+    padding: 40px 0;
+}
+
+.about__lead {
+    margin-top: 8px;
+    font-size: 20px;
+    line-height: 1.45;
+    text-align: center;
+}
+
+.about__txt {
+    margin-top: 24px;
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+.about__img {
+    width: 100%;
+    max-width: 198px;
+    aspect-ratio: 198 / 400;
+    margin: 32px auto 0;
+}
+
+.about__img img {
+    width: 100%;
+    height: auto;
+}
+
+
+/*
+reasons
+================================================ */
+.reasons {
+    background-color: #FFFAF5;
+    padding: 40px 0;
+}
+
+.reasons__lead {
+    margin-top: 8px;
+    font-size: 20px;
+    line-height: 1.45;
+    text-align: center;
+}
+
+.reasons__lead-en {
+    font-size: 30px;
+    line-height: 1.26;
+}
+
+.reasons__lead-num {
+    font-size: 32px;
+    line-height: 1.25;
+}
+
+.reasons__txt {
+    margin-top: 24px;
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+.reasons__list {
+    margin-top: 32px;
+}
+
+.reasons__item:not(:first-of-type) {
+    margin-top: 32px;
+}
+
+.reasons__numImgZone {
+    width: 180px;
+    height: 198px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.reasons__num {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 40px;
+    line-height: 1.25;
+    z-index: 10;
+}
+
+.reasons__imgCircle {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reasons__imgCircle img {
+    width: 100px;
+    height: 100px;
+}
+
+.reasons__imgCircle--02 img {
+    width: 67px;
+    height: 61px;
+}
+
+.reasons__itemTxt {
+    margin-top: 8px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.94;
+}
+
+
+/*
+faq
+================================================ */
+.faq {
+    background-color: #FFFAF5;
+    padding: 40px 0;
+}
+
+.faq__lead {
+    margin-top: 8px;
+    font-size: 20px;
+    line-height: 1.45;
+    text-align: center;
+}
+
+.faq__txtWrapper {
+    /* pc max-width */
+}
+
+.faq__txt {
+    margin-top: 24px;
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+.accordion {
+    margin-top: 32px;
+    /* pc max-width */
+}
+
+.accordion-item:not(:first-of-type) {
+    margin-top: 16px;
+}
+
+.accordion-item {
+    background-color: #fff;
+    border: 1px solid #FD5B19;
+}
+
+.accordion-header {
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    color: #000;
+    border: none;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    cursor: pointer;
+    gap: 8px;
+}
+
+.accordion-label {
+    font-size: 20px;
+    line-height: 1.4;
+    flex-shrink: 0; /* スペースが足りないときに 「縮まない」 ようにする */
+}
+
+.accordion-question {
+    flex-grow: 1; /* 余白を埋めるように「伸びる」 */
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.71;
+    text-align: left;
+}
+
+.accordion-icon {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+.accordion-icon::before,
+.accordion-icon::after {
+  content: '';
+  position: absolute;
+  background-color: #000;
+  transition: transform 0.3s ease;
+}
+
+/* 横線（共通） */
+.accordion-icon::before {
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  transform: translateY(-50%);
+}
+
+/* 縦線（+ のときだけ見える） */
+.accordion-icon::after {
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  transform: translateX(-50%);
+}
+
+/* 開いた状態では縦線を透明にして「−」に見せる */
+.accordion-header.active .accordion-icon::after {
+  opacity: 0;
+}
+
+.accordion-content {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+
+.accordion-content p {
+    padding: 0 20px 20px;
+    font-size: 14px;
+    line-height: 1.92;
+}
+
+
+/*
+footer
+================================================ */
+footer {
+    background-color: #333;
+    padding: 32px 0;
+}
+
+.container--footer {
+    /* pc padding */
+}
+
+.footer__logo {
+    width: 146px;
+    line-height: 1px;
+    margin: 0 auto;
+}
+
+.footerNav {
+    margin-top: 32px;
+}
+
+.footerNav__item {
+    text-align: center;
+}
+
+.footerNav__item a {
+    font-size: 12px;
+    line-height: 1.41;
+    color: #fff;
+}
+
+.footerNav__item:not(:first-of-type) {
+    margin-top: 16px;
+}

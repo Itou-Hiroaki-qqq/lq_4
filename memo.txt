@@ -1,7 +1,4 @@
-◆ダウンロードボタン
-　ドロップシャドウつきなので注意
-
-◆paddingなど
+        ◆paddingなど
         spサイズ
         container
         padding: 0 15px;
@@ -9,9 +6,12 @@
         container　max-width　1200　　padding16
         wrapper　max-width　1100　
         hero　padding30
- faq__txtWrapper max-width 900
- accordion max-width 800
- container--footer padding50
+        faq__txtWrapper max-width 900
+        accordion max-width 800
+        container--footer padding50
+
+        ◆ダウンロードボタン
+    　  ドロップシャドウつきなので注意
 
         ■使用フォントについて
         「KiraMeki Pay」ロゴは画像で書き出してください。

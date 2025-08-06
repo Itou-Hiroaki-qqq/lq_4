@@ -53,39 +53,39 @@ img {
 }
 
 .section-title {
-    font-size: 1rem;
+    font-size: 16px;
     text-align: center;
     line-height: 1.25;
 }
 
 .container {
     width: 100%;
-    padding: 0 0.9375rem;
+    padding: 0 15px;
 }
 
 
 /* common PC */
-@media  (min-width:48.0625rem) {
+@media  (min-width:769px) {
     .container {
-        max-width: 75rem;
-        padding: 0 1rem;
+        max-width: 1200px;
+        padding: 0 16px;
         margin: 0 auto;
     }
 
     .wrapper {
-        max-width: 68.75rem;
+        max-width: 1100px;
         margin: 0 auto;
     }
 
     .section-title {
-        font-size: 1.25rem;
+        font-size: 20px;
     }
 
     .spBr {
         display: none;
     }
 
-} /* @media  (min-width:48.0625rem) */
+} /* @media  (min-width:769px) */
 
 
 /*
@@ -93,7 +93,7 @@ hero
 ================================================ */
 .hero {
     width: 100%;
-    padding: 1rem 0 3rem;
+    padding: 16px 0 48px;
 }
 
 .hero__title {
@@ -101,12 +101,12 @@ hero
 }
 
 .hero__title a img {
-    width: 9.125rem;
-    line-height: 0.0625rem;
+    width: 146px;
+    line-height: 1px;
 }
 
 .wrapper--hero {
-    margin-top: 1.875rem;
+    margin-top: 30px;
 }
 
 .hero__group {
@@ -115,8 +115,8 @@ hero
 
 .hero__img {
     width: calc(100% * (280/390));
-    min-width: 17.5rem;
-    max-width: 29.625rem;
+    min-width: 280px;
+    max-width: 474px;
     aspect-ratio: 280 / 383;
     margin: 0 auto;
 }
@@ -127,27 +127,27 @@ hero
 }
 
 .hero__caption-main {
-    margin-top: 1.125rem;
-    font-size: 2.375rem;
+    margin-top: 18px;
+    font-size: 38px;
     line-height: 1.26;
 }
 
 .hero__caption-lead {
-    margin-top: 0.5rem;
-    font-size: 0.9375rem;
+    margin-top: 8px;
+    font-size: 15px;
     line-height: 1.4;
 }
 
 
 /* hero PC */
-@media  (min-width:48.0625rem) {
+@media  (min-width:769px) {
     .wrapper--hero {
-        padding: 0 1.875rem;
+        padding: 0 30px;
         margin-top: 0;
     }
 
     .hero {
-        padding: 1.625rem 0;
+        padding: 26px 0;
     }
 
     .container--hero {
@@ -159,25 +159,25 @@ hero
         text-align: left;
         position: absolute;
         top: 0;
-        left: 1rem;
+        left: 16px;
     }
 
     .hero__title a img {
-        width: 12.1875rem;
+        width: 195px;
     }
 
     .hero__group {
         display: flex;
         align-items: center;
         justify-content: center;
-        column-gap: 2.125rem;
+        column-gap: 34px;
         flex-direction: row-reverse;
     }
 
     .hero__img {
         width: 100%;
-        min-width: 17.5rem;
-        max-width: 29.625rem;
+        min-width: 280px;
+        max-width: 474px;
         aspect-ratio: 474 / 648;
         margin: 0;
     }
@@ -189,17 +189,17 @@ hero
 
     .hero__caption-main {
         margin-top: 0;
-        font-size: 4rem;
+        font-size: 64px;
         line-height: 1.25;
     }
 
     .hero__caption-lead {
-        margin-top: 1.25rem;
-        font-size: 1.5625rem;
+        margin-top: 20px;
+        font-size: 25px;
         line-height: 1.44;
     }
 
-} /* @media  (min-width:48.0625rem) */
+} /* @media  (min-width:769px) */
 
 
 /*
@@ -207,12 +207,12 @@ cta
 ================================================ */
 .cta {
     background-color: #BCE0EB;
-    padding: 1.75rem 0 1.5rem;
+    padding: 28px 0 24px;
     text-align: center;
 }
 
 .cta__lead {
-    font-size: 0.875rem;
+    font-size: 14px;
     line-height: 1.42;
     /* 斜め線装飾のための設定 */
     position: relative;
@@ -224,19 +224,19 @@ cta
 .cta__lead::after {
     content: "";
     position: absolute;
-    top: 90%; /* 親要素の上からの位置 */
-    width: 1.875rem; /* 線の長さ */
-    height: 0.0625rem; /* 線の太さ */
+    top: 96%; /* 親要素の上からの位置 */
+    width: 30px; /* 線の長さ */
+    height: 1px; /* 線の太さ */
     background-color: #004DA4;
 }
 .cta__lead::before {
-    left: -2.5rem; /* 線の横位置 */
-    transform: rotate(50deg); /* 線の傾き具合 */
+    left: -42px; /* 線の横位置 */
+    transform: rotate(60deg); /* 線の傾き具合 */
     transform-origin: right bottom;
 }
 .cta__lead::after {
-    right: -2.5rem; /* 線の横位置 */
-    transform: rotate(-50deg); /* 線の傾き具合 */
+    right: -42px; /* 線の横位置 */
+    transform: rotate(-60deg); /* 線の傾き具合 */
     transform-origin: left bottom;
 }
 
@@ -245,24 +245,24 @@ cta
     align-items: center;
     justify-content: center;
     width: 100%;
-    max-width: 14.5rem;
-    margin: 0.4875rem auto 0;
-    height: 2.8125rem;
-    font-size: 0.9375rem;
+    max-width: 232px;
+    margin: 11px auto 0;
+    height: 45px;
+    font-size: 15px;
     line-height: 1.4;
-    border-radius: 0.25rem;
-    box-shadow: 0 0 0.25rem 0 rgba(0,0,0,0.2);
+    border-radius: 4px;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,0.2);
 }
 
 
 /* cta PC */
-@media  (min-width:48.0625rem) {
+@media  (min-width:769px) {
     .cta {
-        padding: 2.875rem 0 2.5rem;
+        padding: 46px 0 40px;
     }
 
     .cta__lead {
-        font-size: 1.25rem;
+        font-size: 20px;
         line-height: 1.45;
     }
 
@@ -270,31 +270,31 @@ cta
     .cta__lead::after {
         position: absolute;
         top: 90%; /* 親要素の上からの位置 */
-        width: 1.875rem; /* 線の長さ */
-        height: 0.0625rem; /* 線の太さ */
+        width: 30px; /* 線の長さ */
+        height: 1px; /* 線の太さ */
         background-color: #004DA4;
     }
     .cta__lead::before {
-        left: -2.5rem; /* 線の横位置 */
+        left: -40px; /* 線の横位置 */
         transform: rotate(50deg); /* 線の傾き具合 */
         transform-origin: right bottom;
     }
     .cta__lead::after {
-        right: -2.5rem; /* 線の横位置 */
+        right: -40px; /* 線の横位置 */
         transform: rotate(-50deg); /* 線の傾き具合 */
         transform-origin: left bottom;
     }
 
     .cta__btn {
         width: 100%;
-        max-width: 21.125rem;
-        margin: 1.25rem auto 0;
-        height: 4rem;
-        font-size: 1.375rem;
+        max-width: 338px;
+        margin: 20px auto 0;
+        height: 64px;
+        font-size: 22px;
         line-height: 1.45;
     }
 
-} /* @media  (min-width:48.0625rem) */
+} /* @media  (min-width:769px) */
 
 
 /*
@@ -302,27 +302,27 @@ about
 ================================================ */
 .about {
     background-color: #FFFAF5;
-    padding: 2.5rem 0;
+    padding: 40px 0;
 }
 
 .about__lead {
-    margin-top: 0.5rem;
-    font-size: 1.25rem;
+    margin-top: 8px;
+    font-size: 20px;
     line-height: 1.45;
     text-align: center;
 }
 
 .about__txt {
-    margin-top: 1.5rem;
-    font-size: 1rem;
+    margin-top: 24px;
+    font-size: 16px;
     line-height: 1.75;
 }
 
 .about__img {
     width: 100%;
-    max-width: 12.375rem;
+    max-width: 198px;
     aspect-ratio: 198 / 400;
-    margin: 2rem auto 0;
+    margin: 28px auto 0;
 }
 
 .about__img img {
@@ -332,13 +332,13 @@ about
 
 
 /* about PC */
-@media  (min-width:48.0625rem) {
+@media  (min-width:769px) {
     .about {
-        padding: 5rem 0;
+        padding: 80px 0;
     }
 
     .container--about {
-        max-width: 59rem;
+        max-width: 944px;
         margin: 0 auto;
         display: flex;
         align-items: center;
@@ -355,21 +355,21 @@ about
     }
 
     .about__lead {
-        margin-top: 0.5rem;
-        font-size: 1.75rem;
+        margin-top: 8px;
+        font-size: 28px;
         line-height: 1.42;
         text-align: left;
     }
 
     .about__txt {
-        margin-top: 1.5rem;
-        font-size: 1rem;
+        margin-top: 24px;
+        font-size: 16px;
         line-height: 2;
     }
 
     .about__img {
         width: calc(100% * (296/944));
-        max-width: 18.5rem;
+        max-width: 296px;
         aspect-ratio: 296 / 600;
         margin: 0;
     }
@@ -379,7 +379,7 @@ about
         height: auto;
     }
 
-} /* @media  (min-width:48.0625rem) */
+} /* @media  (min-width:769px) */
 
 
 /*
@@ -387,43 +387,45 @@ reasons
 ================================================ */
 .reasons {
     background-color: #FFFAF5;
-    padding: 2.5rem 0;
+    padding: 40px 0 36px;
 }
 
 .reasons__lead {
-    margin-top: 0.5rem;
-    font-size: 1.25rem;
+    margin-top: 8px;
+    font-size: 20px;
     line-height: 1.45;
     text-align: center;
 }
 
 .reasons__lead-en {
-    font-size: 1.875rem;
+    font-size: 30px;
     line-height: 1.26;
 }
 
 .reasons__lead-num {
-    font-size: 2rem;
+    font-size: 32px;
     line-height: 1.25;
+    /* 調整 */
+    letter-spacing: -0.2em;
 }
 
 .reasons__txt {
-    margin-top: 1.5rem;
-    font-size: 1rem;
+    margin-top: 24px;
+    font-size: 16px;
     line-height: 1.75;
 }
 
 .reasons__list {
-    margin-top: 2rem;
+    margin-top: 29px;
 }
 
 .reasons__item:not(:first-of-type) {
-    margin-top: 2rem;
+    margin-top: 28px;
 }
 
 .reasons__numImgZone {
-    width: 11.25rem;
-    height: 12.375rem;
+    width: 180px;
+    height: 198px;
     margin: 0 auto;
     position: relative;
 }
@@ -432,14 +434,14 @@ reasons
     position: absolute;
     top: 0;
     left: 0;
-    font-size: 2.5rem;
+    font-size: 40px;
     line-height: 1.25;
     z-index: 10;
 }
 
 .reasons__imgCircle {
-    width: 11.25rem;
-    height: 11.25rem;
+    width: 180px;
+    height: 180px;
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -452,54 +454,54 @@ reasons
 }
 
 .reasons__imgCircle img {
-    width: 6.25rem;
-    height: 6.25rem;
+    width: 100px;
+    height: 100px;
 }
 
 .reasons__imgCircle--02 img {
-    width: 4.1875rem;
-    height: 3.8125rem;
+    width: 67px;
+    height: 61px;
 }
 
 .reasons__itemTxt {
-    margin-top: 0.5rem;
+    margin-top: 3px;
     text-align: center;
-    font-size: 1.125rem;
+    font-size: 18px;
     line-height: 1.94;
 }
 
 
 /* reasons PC */
-@media  (min-width:48.0625rem) {
+@media  (min-width:769px) {
     .reasons {
-        padding: 5rem 0;
+        padding: 80px 0;
     }
 
     .container--reasons {
-        max-width: 56.25rem;
-        padding: 0 1rem;
+        max-width: 900px;
+        padding: 0 16px;
     }
 
     .reasons__lead {
-        margin-top: 0.5rem;
-        font-size: 1.75rem;
+        margin-top: 8px;
+        font-size: 28px;
         line-height: 1.6;
         text-align: center;
     }
 
     .reasons__lead-en {
-        font-size: 2.5rem;
+        font-size: 40px;
         line-height: 1.25;
     }
 
     .reasons__lead-num {
-        font-size: 3rem;
+        font-size: 48px;
         line-height: 1.25;
     }
 
     .reasons__txt {
-        margin-top: 1.5rem;
-        font-size: 1rem;
+        margin-top: 24px;
+        font-size: 16px;
         line-height: 2;
     }
 
@@ -519,7 +521,7 @@ reasons
 
     .reasons__numImgZone {
         width: 100%;
-        max-width: 14.875rem;
+        max-width: 238px;
         height: auto;
         aspect-ratio: 238 / 273;
         margin: 0 auto;
@@ -530,38 +532,38 @@ reasons
         position: absolute;
         top: 0;
         left: 0;
-        font-size: 3.5rem;
+        font-size: 56px;
         line-height: 1.26;
     }
 
     .reasons__imgCircle {
         width: 100%;
-        max-width: 14.875rem;
+        max-width: 238px;
         height: auto;
         aspect-ratio: 1 / 1;
     }
 
     .reasons__imgCircle img {
         width: 100%;
-        max-width: 8.125rem;
+        max-width: 130px;
         height: auto;
         aspect-ratio: 1 / 1;
     }
 
     .reasons__imgCircle--02 img {
         width: 100%;
-        max-width: 5.625rem;
+        max-width: 90px;
         height: auto;
         aspect-ratio: 90 / 82;
     }
 
     .reasons__itemTxt {
-        margin-top: 1.375rem;
-        font-size: 1.25rem;
+        margin-top: 22px;
+        font-size: 20px;
         line-height: 1.75;
     }
 
-} /* @media  (min-width:48.0625rem) */
+} /* @media  (min-width:769px) */
 
 
 /*
@@ -569,38 +571,38 @@ faq
 ================================================ */
 .faq {
     background-color: #FFFAF5;
-    padding: 2.5rem 0;
+    padding: 40px 0;
 }
 
 .faq__lead {
-    margin-top: 0.5rem;
-    font-size: 1.25rem;
+    margin-top: 8px;
+    font-size: 20px;
     line-height: 1.45;
     text-align: center;
 }
 
 .faq__txt {
-    margin-top: 1.5rem;
-    font-size: 1rem;
+    margin-top: 22px;
+    font-size: 16px;
     line-height: 1.75;
 }
 
 .accordion {
-    margin-top: 2rem;
+    margin-top: 30px;
 }
 
 .accordion-item:not(:first-of-type) {
-    margin-top: 1rem;
+    margin-top: 16px;
 }
 
 .accordion-item {
     background-color: #fff;
-    border: 0.0625rem solid #FD5B19;
+    border: 1px solid #FD5B19;
 }
 
 .accordion-header {
     width: 100%;
-    padding: 1.25rem;
+    padding: 18px 20px 15px;
     background: #fff;
     color: #000;
     border: none;
@@ -608,18 +610,26 @@ faq
     align-items: flex-start;
     justify-content: space-between;
     cursor: pointer;
-    gap: 0.5rem;
+    gap: 8px;
+}
+
+/* 調整 */
+.accordion-header--ad {
+    padding: 18px 20px 16px;
+}
+.accordion-header--ad2 {
+    padding: 18px 20px 17px;
 }
 
 .accordion-label {
-    font-size: 1.25rem;
+    font-size: 20px;
     line-height: 1.4;
     flex-shrink: 0; /* スペースが足りないときに 「縮まない」 ようにする */
 }
 
 .accordion-question {
     flex-grow: 1; /* 余白を埋めるように「伸びる」 */
-    font-size: 0.875rem;
+    font-size: 14px;
     font-weight: bold;
     line-height: 1.71;
     text-align: left;
@@ -627,9 +637,10 @@ faq
 
 .accordion-icon {
     position: relative;
-    width: 1rem;
-    height: 1rem;
+    width: 16px;
+    height: 16px;
     flex-shrink: 0;
+    transform: translate(1px, 6px);
 }
 
 .accordion-icon::before,
@@ -645,7 +656,7 @@ faq
   top: 50%;
   left: 0;
   right: 0;
-  height: 0.125rem;
+  height: 2px;
   transform: translateY(-50%);
 }
 
@@ -654,7 +665,7 @@ faq
   left: 50%;
   top: 0;
   bottom: 0;
-  width: 0.125rem;
+  width: 2px;
   transform: translateX(-50%);
 }
 
@@ -670,42 +681,42 @@ faq
 }
 
 .accordion-content p {
-    padding: 0 1.25rem 1.25rem;
-    font-size: 0.875rem;
+    padding: 0 20px 15px;
+    font-size: 14px;
     line-height: 1.92;
 }
 
 
 /* faq PC */
-@media  (min-width:48.0625rem) {
+@media  (min-width:769px) {
     .faq {
-        padding: 5rem 0;
+        padding: 80px 0;
     }
 
     .faq__lead {
-        margin-top: 0.5rem;
-        font-size: 1.75rem;
+        margin-top: 8px;
+        font-size: 28px;
         line-height: 1.42;
     }
 
     .faq__txtWrapper {
-        max-width: 56.25rem;
+        max-width: 900px;
         margin: 0 auto;
     }
 
     .faq__txt {
-        margin-top: 1.5rem;
-        font-size: 1rem;
+        margin-top: 24px;
+        font-size: 16px;
         line-height: 2;
     }
 
     .accordion {
-        max-width: 50rem;
-        margin: 2rem auto 0;
+        max-width: 800px;
+        margin: 32px auto 0;
     }
 
     .accordion-item:not(:first-of-type) {
-        margin-top: 1.25rem;
+        margin-top: 20px;
     }
 
     .accordion-item {
@@ -714,24 +725,24 @@ faq
 
     .accordion-header {
         width: 100%;
-        padding: 1.5rem 2rem;
-        gap: 1rem;
+        padding: 24px 32px;
+        gap: 16px;
     }
 
     .accordion-label {
-        font-size: 1.75rem;
+        font-size: 28px;
         line-height: 1;
     }
 
     .accordion-question {
-        font-size: 1.125rem;
+        font-size: 18px;
         line-height: 2;
     }
 
     .accordion-icon {
         position: relative;
-        width: 1rem;
-        height: 1rem;
+        width: 16px;
+        height: 16px;
     }
 
     .accordion-icon::before,
@@ -745,7 +756,7 @@ faq
     top: 50%;
     left: 0;
     right: 0;
-    height: 0.125rem;
+    height: 2px;
     transform: translateY(-50%);
     }
 
@@ -754,7 +765,7 @@ faq
     left: 50%;
     top: 0;
     bottom: 0;
-    width: 0.125rem;
+    width: 2px;
     transform: translateX(-50%);
     }
 
@@ -770,12 +781,12 @@ faq
     }
 
     .accordion-content p {
-        padding: 0 2rem 1.5rem;
-        font-size: 1rem;
+        padding: 0 32px 24px;
+        font-size: 16px;
         line-height: 1.68;
     }
 
-} /* @media  (min-width:48.0625rem) */
+} /* @media  (min-width:769px) */
 
 
 /*
@@ -783,17 +794,17 @@ footer
 ================================================ */
 footer {
     background-color: #333;
-    padding: 2rem 0;
+    padding: 32px 0;
 }
 
 .footer__logo {
-    width: 9.125rem;
-    line-height: 0.0625rem;
+    width: 146px;
+    line-height: 1px;
     margin: 0 auto;
 }
 
 .footerNav {
-    margin-top: 2rem;
+    margin-top: 32px;
 }
 
 .footerNav__item {
@@ -801,24 +812,24 @@ footer {
 }
 
 .footerNav__item a {
-    font-size: 0.75rem;
+    font-size: 12px;
     line-height: 1.41;
     color: #fff;
 }
 
 .footerNav__item:not(:first-of-type) {
-    margin-top: 1rem;
+    margin-top: 13px;
 }
 
 
 /* footer PC */
-@media  (min-width:48.0625rem) {
+@media  (min-width:769px) {
     footer {
-        padding: 2rem 0;
+        padding: 32px 0;
     }
 
     .container--footer {
-        padding: 0 3.125rem;
+        padding: 0 50px;
     }
 
     .footer__group {
@@ -828,7 +839,7 @@ footer {
     }
 
     .footer__logo {
-        width: 12.1875rem;
+        width: 195px;
         margin: 0;
     }
 
@@ -840,7 +851,7 @@ footer {
         display: flex;
         align-items: center;
         justify-content: center;
-        column-gap: 2rem;
+        column-gap: 32px;
     }
 
     .footerNav__item {
@@ -848,7 +859,7 @@ footer {
     }
 
     .footerNav__item a {
-        font-size: 0.8125rem;
+        font-size: 13px;
         line-height: 1.46;
     }
 
@@ -856,4 +867,4 @@ footer {
         margin-top: 0;
     }
 
-} /* @media  (min-width:48.0625rem) */
+} /* @media  (min-width:769px) */
